@@ -1,0 +1,117 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Widgetkit Slideshow: Circumference Style
+ */
+
+/* Caption
+----------------------------------------------------------------------------------------------------*/
+.wk-slideshow, .wk-slideshow .slides {
+margin-left: 0!important;
+}
+.wk-slideshow-circumference li::before {
+	content: "";
+}
+.wk-slideshow-circumference ul,
+.wk-slideshow-circumference li {
+	margin: 0;
+	padding:0;
+	list-style:none;
+}
+.wk-slideshow-circumference .caption {
+	width:auto;
+	padding: 0;
+	bottom: 5em;
+	left:0;
+	background:none;
+}
+.wk-slideshow-circumference .caption div {
+	position: relative;
+	width:auto;
+	overflow:hidden;
+}
+.wk-slideshow-circumference img.alignnone {
+	margin:0;
+}
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+.wk-slideshow-circumference .slidernav {
+	width:100%;
+	position: absolute;
+	text-align: center;
+	bottom:3%;
+	z-index: 1000;
+}
+.wk-slideshow-circumference .nav {
+	position: relative;
+	padding-top:5px;
+	text-align: center;
+	margin:auto;
+}
+.wk-slideshow-circumference .nav li {
+	display: inline-block;
+	margin-left: 5px;
+	list-style:none;
+}
+.wk-slideshow-circumference .nav li:first-child { margin-left: 0; }
+
+.wk-slideshow-circumference .nav span {
+	width: 20px;
+	height: 20px;
+	display:block;
+	background: url(images/nav.png) 0 0 no-repeat;
+	overflow: hidden;
+}
+
+
+.wk-slideshow-circumference .nav span:hover { background-position: 0 -40px; }
+.wk-slideshow-circumference .nav span:active { background-position: 0 -40px; }
+.wk-slideshow-circumference .nav .active span { background-position: 0 -20px; }
+
+/* Buttons
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-circumference > div { position: relative; }
+
+.wk-slideshow-circumference > div:hover .next,
+.wk-slideshow-circumference > div:hover .prev {
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+	background: url(images/buttons.png) 0 50px no-repeat;
+	z-index:6;
+}
+
+.wk-slideshow-circumference > div:hover .next {
+	right: 2%;
+	background-position: 0 0;
+}
+
+.wk-slideshow-circumference > div:hover .prev {
+	left: 2%;
+	background-position: 0 -50px;
+}
+
+
+/* Responsive
+----------------------------------------------------------------------------------------------------*/
+
+/* Only Touch Devices */
+@media (max-width:1024px) {
+}
+@media (max-width:768px) {
+	.wk-slideshow-circumference .slidernav {bottom: 5%;}
+	.wk-slideshow-circumference .next,
+	.wk-slideshow-circumference .prev {}
+}
+
+@media (max-width: 480px) {
+	.wk-slideshow-circumference .next,
+	.wk-slideshow-circumference .prev {bottom: 5%;}
+}
+@media (max-width: 320px) {
+	.wk-slideshow-circumference .next,
+	.wk-slideshow-circumference .prev {bottom: 1%;}
+}

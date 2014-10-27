@@ -1,0 +1,80 @@
+********************************************************************************
+PACKAGE-LOG: 2014-08-31 14:00:25
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.6
+WORDPRESS:	3.9.2
+PHP INFO:	5.5.11 | SAPI: apache2handler
+SERVER:		Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (256M default) 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP
+MYSQLDUMP:    Is Supported
+MYSQLTIMEOUT: 5000 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+wp_commentmeta (17) 
+wp_comments (4) 
+wp_duplicator_packages (2) 
+wp_dynamic_widgets (0) 
+wp_links (0) 
+wp_options (294) 
+wp_postmeta (336) 
+wp_posts (159) 
+wp_term_relationships (11) 
+wp_term_taxonomy (3) 
+wp_terms (3) 
+wp_usermeta (24) 
+wp_users (1) 
+SQL CREATED: 20140831_kwycc2_54032a41dc7b47034140831135929_database.sql 
+SQL FILE SIZE: 722.96KB 
+SQL RUNTIME: 0.11 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/xampp/htdocs/wordpress 
+ARCHIVE FILE: 20140831_kwycc2_54032a41dc7b47034140831135929_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	58.97MB 
+STATS:	Dirs 564 | Files 3,655 | Links 0 
+SQL ADDED: 20140831_kwycc2_54032a41dc7b47034140831135929_database.sql 
+WARNING: Unable to zip directory: 'C:/xampp/htdocs/wordpress' 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4219
+    [filename] => C:\xampp\htdocs\wordpress\wp-snapshots\tmp\20140831_kwycc2_54032a41dc7b47034140831135929_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 32.77MB 
+ARCHIVE RUNTIME: 6.12 sec. 
+
+******************************************************************************** 
+INSTALLER: 
+******************************************************************************** 
+INSTALLER FILE: Build Start 
+INSTALLER FILE: Build Finished 
+INSTALLER FILE: Preping for use 
+INSTALLER FILE: Template parsed with new data 
+INSTALLER FILE: Complete [C:/xampp/htdocs/wordpress/wp-snapshots/tmp/20140831_kwycc2_54032a41dc7b47034140831135929_installer.php] 
+INSTALLER FILE: Added to archive 
+
+********************************************************************************
+RECORD ID:[2]
+FILE SIZE: Archive:32.77MB | SQL:722.96KB | Installer:413.97KB
+TOTAL PROCESS RUNTIME: 8.38 sec.
+DONE PROCESSING => 20140831_kwycc2 2014-08-31 14:00:34
+********************************************************************************
+ 
