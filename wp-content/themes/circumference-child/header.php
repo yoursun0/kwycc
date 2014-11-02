@@ -21,6 +21,14 @@
 
 <body <?php body_class(); ?> style="font-size: <?php echo get_theme_mod( 'body_fontsize', '100' ); ?>%;">
 
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_HK/sdk.js#xfbml=1&appId=184368601642819&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 	<?php $pagewidth = get_theme_mod( 'page_width', 'default' );
 	 switch ($pagewidth) {
@@ -89,71 +97,21 @@
         <a href="javascript:void"><div class="toggle-menu-btn"></div></a>         
 			</div><!-- #navbar -->       
 
-      <div id="toggle-menu">
-          <ul>
-              <a href="index.html"><li>Home</li></a>
-              <a href="about.html"><li>About Us</li></a>
-              <a href="activity.html"><li>BSPP Activities</li></a>
-              <a href="#"><li>Sharing</li></a>
-              <a href="partner.html"><li>BSPP Partners</li></a>
-              <a href="#"><li>Joining BSPP</li></a>
-              <a href="#"><li>Contact Us</li></a>
-              <li class="toggle-menu-search"><input type="text" placeholder="Search in BSPP..."><input type="button"></li>
-          </ul>    
-    </div>
-
       <div class="language">
           <a href="http://localhost/wordpress/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
       </div>             
         <!-- </div> -->
         <?php endif; ?>
     </div>
+    <div id="toggle-menu">
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false,'menu_class' => 'nav-menu' ) ); ?>
   
+      </div>
 </header>
 
 <?php if ( has_nav_menu( 'secondary' ) ) : ?>
-<!-- <div id="secondary-nav" style="background-color: <?php echo get_theme_mod( 'secondary_navbg', '#c6b274' ); ?>;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="navbar" class="navbar">
-          <nav id="site-navigation2" class="navigation main-navigation" role="navigation">
-            <div class="menu-toggle-wrapper hidden-md hidden-lg">
-              <h3 class="menu-toggle2"><?php _e( 'Menu', 'circumference' ); ?></h3>
-              </div>
-            <a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'circumference' ); ?>">
-            <?php _e( 'Skip to content', 'circumference' ); ?></a>
-            <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container' => false,'menu_class' => 'nav-menu' ) ); ?>
-            </nav>              
-          </div>
-      </div>
-      </div>
-  </div>
-</div> -->
+
 <?php endif; ?>
-	
-<!-- aside id="cir-banner" style="background-color: <?php echo get_theme_mod( 'banner_bg_colour', '#c6b274' ); ?>; <?php if ( get_header_image() ) : ?>background-image: url(<?php header_image(); ?>);<?php endif; ?><?php if( get_post_meta($post->ID, 'header_background', true) ) { ?> background-image: url(<?php echo esc_url (the_field('header_background')); ?>); <?php } ?> color: <?php echo get_theme_mod( 'banner_text_colour', '#ffffff' ); ?>;">
-		
-			<?php get_sidebar( 'banner' ); ?>
-		
-</aside -->
-	
-    
-<!-- div id="cir-breadcrumbs-wrapper" style="background-color: <?php echo get_theme_mod( 'breadcrumbs_bg', '#e2e5e7' ); ?>; color:<?php echo get_theme_mod( 'breadcrumbs_text', '#9ca4a9' ); ?>;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-      <?php 
-	  	if(! is_front_page() ) : 
-	  		if(function_exists('bcn_display')) {
-			bcn_display();
-			}
-		 endif; 
-		?>
-    </div>
-    </div>
-  </div>
-</div -->
 
 <?php get_sidebar( 'cta' ); ?>
 

@@ -22,8 +22,9 @@
 	</div>
 	<div id="kwycc-tips-fb">
 		<a href="http://www.facebook.com/addfriend.php?id=kwycc" target="_blank">
-			<div id="kwycc-tips-fblike"  ></div>
+			<img class="img-responsive" src="wp-content/themes/circumference-child/images/fblike.png" alt="facebook-link"/>
 		</a>
+		<div class="fb-like" data-href="http://kwycc.org" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 	</div>
 </div>
 

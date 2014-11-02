@@ -23,42 +23,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	
 /* Add your custom  css below */
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Custom mobile styling 
--------------------------------------------------------------- */
-
-@media screen and (max-width: 320px) {
-
-}
-
-@media (min-width: 321px) and (max-width: 480px) {
-
-}
-
-@media screen and (max-width: 480px) {
-
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-
 h1 a, 
 h2 a, 
 h3 a, 
@@ -191,6 +155,7 @@ ul.nav-menu {
 }
 
 div.language{
+	display: none;
 	float: right;
 	padding: 4em 3em 0 0;
 }
@@ -249,27 +214,27 @@ div.language a:hover {
 
 #kwycc-tips-left{
 	float: left;
-	width: 25%;
+	width: 30%;
 	display: inline-block;
 	padding: 3%;
 }
 
 #kwycc-tips-right{
 	float: left;
+	width: 55%;
 }
 
 #kwycc-tips-fb{
 	float: right;
-	width: 20%;
+	width: 15%;
 }
 
-#kwycc-tips-fblike{
-	margin: 25% 10%;
-	width: 80%;
-	height: 250px;
-	background: transparent url(images/fblike.png) left top no-repeat;
-	background-size: contain;
+
+#cir-bottom-wrapper {
+	font-size: 0.513em;
+	padding: 1em 0;
 }
+
 
 /* content area */
 
@@ -297,7 +262,8 @@ div.language a:hover {
 #toggle-menu ul{
 	list-style:none;
 	text-align:center;
-	background:	#333;
+	background:	#999999;
+	margin: -30px 10px;
 	padding:0 !important;
 	-webkit-padding-start:0 !important;
 	-moz-webkit-padding-start:0 !important;
@@ -305,9 +271,8 @@ div.language a:hover {
 	-o-webkit-padding-start:0 !important;
 }
 
-
-
 #toggle-menu ul li{	
+	margin-left: 0;
 	display:inline-block;
 	width:100%;
 	padding:15px 0;
@@ -318,60 +283,78 @@ div.language a:hover {
 }
 
 #toggle-menu ul li:hover{
-	background:#ffc890;
+	background:#CCCCCC;
 	color:#373737;
 }
 
-.toggle-menu-search{
-	height:40px;
-	padding:15px 2.5% !important;
+
+/* Custom mobile styling 
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 390px) {
+
+	#top-logo{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.banner-text{
+		padding:30px 0;	
+	}
 	
+	.banner{
+		height:420px;	
+	}
+
+	#kwycc-tips-left{
+		display: none;
+	}
+
+	#kwycc-tips-right{
+		float: left;
+		width: 75%;
+	}
+
+	#kwycc-tips-fb{
+		float: right;
+		width: 25%;
+	}
+
+	#cir-bottom-wrapper {
+		font-size: 0.513em;
+		padding: 0.2em 0;
+	}
+
 }
 
-.toggle-menu-search:hover{
-	background:#333 !important;	
-}
-.toggle-menu-search input[type="text"]{
-	background:#FFF;
-	width:75%;
-	height:35px;
-	padding:0 10px;
-	border:none;
-	color:#373737;
-	font-weight:600;
-	font-size:14px;
-	float:left;
-}
+@media (min-width: 480px) and (max-width: 912px) {
 
-.toggle-menu-search input[type="button"]{
-	background:#F90 url(images/icon-search-white.png) center no-repeat;
-	text-indent:0;
-	border:none;
-	display:inline-block;
-	color:#FFF;
-	font-family:arial;
-	height:35px;
-	width:15%;
-	text-decoration:none;
-	text-align:center;
-	float:left;
-	cursor:pointer;
+	#kwycc-tips-left{
+		float: left;
+		width: 30%;
+	}
+
+	#kwycc-tips-right{
+		float: left;
+		width: 50%;
+	}
+
+	#kwycc-tips-fb{
+		float: right;
+		width: 20%;
+	}
+
+	#cir-bottom-wrapper {
+		font-size: 0.513em;
+		padding: 0.5em 0;
+	}
+
 }
 
-.toggle-menu-search input[type="button"]:hover{
-	background-color:#C60;
-}
-
-.toggle-menu-search input[type="button"]:active{
-	position:relative;
-	background:#7E4804 url(images/icon-search-white.png) center no-repeat;
-}
-
-/*----------------------------toggemenu end here----------------------------*/
-
-
-@media only screen and (max-width:960px){
-	
+@media screen and (max-width: 912px) {
 
 	.site-logo{
 		left:20px;	
@@ -391,19 +374,14 @@ div.language a:hover {
 	.toggle-menu-btn{
 		display:block;	
 	}	
-	
-	
-}
-@media only screen and (max-width: 666px){
-
 }
 
-@media only screen and (max-width: 486px){
-	.banner-text{
-		padding:30px 0;	
+
+@media (max-width: 643px) {
+
+	ul.nav-menu,
+	div.nav-menu > ul {
+		display: block;
 	}
-	
-	.banner{
-		height:420px;	
-	}
+
 }
