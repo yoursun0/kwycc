@@ -52,7 +52,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <?php get_sidebar( 'announcement' ); ?>
+        
         <div id="cir-social-wrapper"><?php get_template_part( 'partials/social-bar' ); ?></div>
       </div>
     </div>
@@ -81,7 +81,7 @@
       
       <?php if ( has_nav_menu( 'primary' ) ) : ?>
       <div class="col-md-7"> -->
-          <a href=".">
+          <a href="./?lang=<?php echo the_curlang() ?>">
               <div id="top-logo" class="logo" >
               </div>
           </a>
@@ -98,7 +98,7 @@
 			</div><!-- #navbar -->       
 
       <div class="language">
-          <a href="http://localhost/wordpress/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a class="<?php echo the_curlang() ?>" href="./?lang=<?php if (the_curlang()=='zh_hk'): ?>en_us<?php else: ?>zh_hk<?php endif ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
       </div>             
         <!-- </div> -->
         <?php endif; ?>

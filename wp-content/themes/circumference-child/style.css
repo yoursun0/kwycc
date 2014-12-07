@@ -94,73 +94,137 @@ ul.nav-menu {
   	overflow: hidden;
 }
 
-#menu-main-menu li.menu-item-59 a{
+/* Chinese nav menu */
+
+#menu-main-menu li.menu-item-317 a{
 	background-image: url(images/buttonb_01.png);
 	background-position: right;
 }
 
-#menu-main-menu li.menu-item-65 a{
+#menu-main-menu li.menu-item-320 a{
 	background-image: url(images/buttonb_02.png);
 	background-position: center;
 }
 
-#menu-main-menu li.menu-item-58 a{
+#menu-main-menu li.menu-item-321 a{
 	background-image: url(images/buttonb_05.png);
 	background-position: left;
 }
 
-#menu-main-menu li.menu-item-76 a{
+#menu-main-menu li.menu-item-322 a{
 	background-image: url(images/buttonb_03.png);
 	background-position: right;
 }
 
-#menu-main-menu li.menu-item-60 a{
+#menu-main-menu li.menu-item-323 a{
 	background-image: url(images/buttonb_06.png);
 	background-position: center;
 }
 
-#menu-main-menu li.menu-item-71 a{
+#menu-main-menu li.menu-item-319 a{
 	background-image: url(images/buttonb_07.png);
 	background-position: left;
 }
 
-#menu-main-menu li.menu-item-59 a:hover{
+#menu-main-menu li.menu-item-317 a:hover{
 	background-image: url(images/buttona_01.png);
 	background-position: right;
 }
 
-#menu-main-menu li.menu-item-65 a:hover{
+#menu-main-menu li.menu-item-320 a:hover{
 	background-image: url(images/buttona_02.png);
 	background-position: center;
 }
 
-#menu-main-menu li.menu-item-58 a:hover{
+#menu-main-menu li.menu-item-321 a:hover{
 	background-image: url(images/buttona_05.png);
 	background-position: left;
 }
 
-#menu-main-menu li.menu-item-76 a:hover{
+#menu-main-menu li.menu-item-322 a:hover{
 	background-image: url(images/buttona_03.png);
 	background-position: right;
 }
 
-#menu-main-menu li.menu-item-60 a:hover{
+#menu-main-menu li.menu-item-323 a:hover{
 	background-image: url(images/buttona_06.png);
 	background-position: center;
 }
 
-#menu-main-menu li.menu-item-71 a:hover{
+#menu-main-menu li.menu-item-319 a:hover{
 	background-image: url(images/buttona_07.png);
 	background-position: left;
 }
 
+/* English nav menu */
+
+#menu-main-menu li.menu-item-299 a{
+	background-image: url(images/buttond_01.png);
+	background-position: right;
+}
+
+#menu-main-menu li.menu-item-299 a:hover{
+	background-image: url(images/buttonc_01.png);
+	background-position: right;
+}
+
+#menu-main-menu li.menu-item-326 a{
+	background-image: url(images/buttond_02.png);
+	background-position: center;
+}
+
+#menu-main-menu li.menu-item-326 a:hover{
+	background-image: url(images/buttonc_02.png);
+	background-position: center;
+}
+
+#menu-main-menu li.menu-item-352 a{
+	background-image: url(images/buttond_03.png);
+	background-position: left;
+}
+
+#menu-main-menu li.menu-item-352 a:hover{
+	background-image: url(images/buttonc_03.png);
+	background-position: left;
+}
+
+#menu-main-menu li.menu-item-351 a{
+	background-image: url(images/buttond_05.png);
+	background-position: right;
+}
+
+#menu-main-menu li.menu-item-351 a:hover{
+	background-image: url(images/buttonc_05.png);
+	background-position: right;
+}
+
+#menu-main-menu li.menu-item-325 a{
+	background-image: url(images/buttond_06.png);
+	background-position: center;
+}
+
+#menu-main-menu li.menu-item-325 a:hover{
+	background-image: url(images/buttonc_06.png);
+	background-position: center;
+}
+
+#menu-main-menu li.menu-item-324 a{
+	background-image: url(images/buttond_07.png);
+	background-position: left;
+}
+
+#menu-main-menu li.menu-item-324 a:hover{
+	background-image: url(images/buttonc_07.png);
+	background-position: left;
+}
+
 div.language{
-	display: none;
+	
 	float: right;
 	padding: 4em 3em 0 0;
 }
 
-div.language a {
+div.language a.zh_hk {
 	background-image: url(images/buttonb_09.png);
 	font-size: 16pt;
 	text-indent: 100%;
@@ -169,15 +233,29 @@ div.language a {
 	background-repeat: no-repeat;
 }
 
-div.language a:hover {
+div.language a.zh_hk:hover {
 	background-image: url(images/buttona_09.png);
+	text-decoration: none;
+}
+
+div.language a.en_us {
+	background-image: url(images/buttona_09.png);
+	font-size: 16pt;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+div.language a.en_us:hover {
+	background-image: url(images/buttonb_09.png);
 	text-decoration: none;
 }
 
 /* front page banner */
 
 #cir-banner{
-	margin-top: -70px;
+	margin-top: -120px;
 	overflow: hidden;
 }
 
@@ -229,19 +307,32 @@ div.language a:hover {
 	width: 15%;
 }
 
+#kwycc-tips-right h4.footer-heading{
+    color: #3b5998;
+    font-size: 2em;
+}
+
+#kwycc-tips-right #cir-announcement h1{
+    color: #3b5998;
+    font-size: 2em;
+}
+
+#kwycc-tips-right #cir-announcement div.textwidget{
+	font-size: 1.5em;
+}
 
 #cir-bottom-wrapper {
 	font-size: 0.513em;
 	padding: 1em 0;
 }
 
-
-/* content area */
-
-#cir-content-wrapper {
-	padding: 1em 0;
+#cir-content-wrapper .row h3{
+	color: #ffcb02;
 }
 
+#cir-content-wrapper .widget_sp_image-description p{
+	color: #ffffff;
+}
 
 /*----------------------------togglemenu here----------------------------*/
 .toggle-menu-btn{
@@ -276,7 +367,7 @@ div.language a:hover {
 	display:inline-block;
 	width:100%;
 	padding:15px 0;
-	font-size:14px;
+	font-size:20px;
 	text-transform:uppercase;
 	font-weight:600;
 	color:#FFF;
@@ -300,6 +391,10 @@ div.language a:hover {
 }
 
 @media screen and (max-width: 480px) {
+
+	div.language{
+		display: none;
+	}
 
 	.banner-text{
 		padding:30px 0;	

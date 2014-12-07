@@ -18,7 +18,11 @@
 		<img class="img-responsive" src="<?php echo get_option( 'my_logo' ); ?>" alt="<?php bloginfo( 'name' ); ?>"/>
 	</div>
 	<div id="kwycc-tips-right">
-		<?php get_sidebar( 'bottom' ); ?>
+		<?php if (the_curlang()=='zh_hk'){ 
+		        get_sidebar( 'announcement' );
+		      }else{
+		      	get_sidebar( 'footer' );
+		      } ?>
 	</div>
 	<div id="kwycc-tips-fb">
 		<a href="http://www.facebook.com/addfriend.php?id=kwycc" target="_blank">
@@ -30,9 +34,7 @@
 
 
 
-<footer id="cir-footer-wrapper">
-    <?php get_sidebar( 'footer' ); ?>
-    
+<footer id="cir-footer-wrapper">    
     <div id="cir-footer-menu">
     	<?php wp_nav_menu( array( 'theme_location' => 'footer', 'fallback_cb' => false, 'container' => false, 'menu_id' => 'footer-menu' ) ); ?>
     </div>

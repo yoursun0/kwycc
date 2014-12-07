@@ -36,8 +36,12 @@ get_header(); ?>
 </section>
 
 <?php get_sidebar( 'inset-bottom' ); ?>
-<?php get_sidebar( 'content-bottom' ); ?>
 
+<?php if (the_curlang()=='zh_hk'){ 
+                get_sidebar( 'content-bottom' );
+              }else{
+                get_sidebar( 'bottom' );
+              } ?>
 
 <?php
 get_footer();
